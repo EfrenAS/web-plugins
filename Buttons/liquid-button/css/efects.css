@@ -1,0 +1,25 @@
+a .liquid::before {
+  border-radius: 45%;
+  background-color: rgba(20, 20, 20, 1);
+  animation: animate 5s linear infinite;
+}
+
+a .liquid::after {
+  border-radius: 45%;
+  background-color: rgba(20, 20, 20, .5);
+  animation: animate 10s linear infinite;
+}
+
+a:hover .liquid {
+  top: -120px;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -80%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -80%) rotate(360deg);
+  }
+}
